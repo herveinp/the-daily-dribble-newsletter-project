@@ -1,25 +1,49 @@
 <!doctype html>
 <html>
     <head>
-        <link rel="stylesheet" href="styles.css" />
+        <title>The Daily Dribble Newsletter</title>
+        <link rel="stylesheet" href="style.css" />
+        <!-- Google Font CDN - Open Sans -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+            rel="stylesheet"
+        />
     </head>
     <body>
-        <h1>THE DAILY DRIBBLE</h1>
+        <div class="newsletter-container">
+            <!-- Newsletter Title -->
+            <h1>THE DAILY DRIBBLE</h1>
 
-        <!-- Image credit: Thomas Serer https://unsplash.com/@jesusance -->
-        <img src="stadium.jpg" />
+            <!-- Image credit: Thomas Serer https://unsplash.com/@jesusance -->
+            <img
+                src="./images/stadium.jpg"
+                class="newsletter-image"
+                alt="A soccer stadium"
+            />
+
+            <!-- Newsletter CTA text -->
+            <p class="newsletter-paragraph">
+                Your daily dose of soccer stories from on and off the pitch.
+                Interviews, breaking news and more!
+            </p>
+
+            <!-- Form element for CTA -->
+            <form action="#" method="post" class="newsletter-form">
+                <input
+                    type="email"
+                    name="email"
+                    class="newsletter-input"
+                    placeholder="ENTER YOUR EMAIL"
+                />
+                <button type="submit" class="newsletter-button">
+                    JOIN NOW
+                </button>
+            </form>
+            <p class="newsletter-paragraph" id="newsletter-second-paragraph">
+                Read our <a href="https://scrimba.com/">terms of service.</a>
+            </p>
+        </div>
     </body>
 </html>
-
-<!--
-THE DAILY DRIBBLE
-
-Your daily dose of soccer stories from on and off the pitch. 
-Interviews,  breaking news and more!
-
-ENTER YOUR EMAIL
-JOIN NOW
-
-Read our terms of service.
-
- -->
